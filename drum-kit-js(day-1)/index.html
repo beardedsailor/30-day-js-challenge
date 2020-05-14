@@ -1,0 +1,83 @@
+<html>
+  <head>
+    <title>Drum Kit JS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script type="text/javascript" src="script.js"></script>
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<style>
+  .top-buffer { margin-top:170px; }
+  kbd{
+    background-color: black;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  span{
+    font-size: 20px;
+  }
+  .col{
+    border: 4px solid black;
+    margin: 10px;
+  }
+</style>  
+</head>
+  <body>
+    <div class="container">
+      <h1 style="text-align: center; margin-top: 30px; font-size: 50px;">Drum Kit</h1>
+      <div class="row top-buffer">
+        <div class="col" data-key="65" id="65">
+          <kbd>A</kbd><br><br>
+          <span class="sound">clap</span>
+        </div>
+        <div class="col" data-key="83" id="83">
+          <kbd>S</kbd><br><br>
+          <span class="sound">Hihat</span>
+        </div>
+        <div class="col" data-key="68" id="68">
+          <kbd>D</kbd><br><br>
+          <span class="sound">Kick</span>
+        </div>
+        <div class="col" data-key="70" id="70">
+          <kbd>F</kbd><br><br>
+          <span class="sound">Openhat</span>
+        </div>
+        <div class="col" data-key="71" id="71">
+          <kbd>G</kbd><br><br>
+          <span class="sound">Boom</span>
+        </div>
+        <div class="col" data-key="72" id="72">
+          <kbd>H</kbd><br><br>
+          <span class="sound">Ride</span>
+        </div>
+        <div class="col" data-key="74" id="74">
+          <kbd>J</kbd><br><br>
+          <span class="sound">Tink</span>
+        </div>
+        <div class="col" data-key="75" id="75">
+          <kbd>K</kbd><br><br>
+          <span class="sound">Tom</span>
+        </div>
+        <div class="col" data-key="76" id="76">
+          <kbd>L</kbd><br><br>
+          <span class="sound">Tink</span>
+        </div>
+      </div>
+    </div>
+    <audio data-key="65" src="sounds/clap.wav"></audio>
+    <audio data-key="83" src="sounds/hihat.wav"></audio>
+    <audio data-key="68" src="sounds/kick.wav"></audio>
+    <audio data-key="70" src="sounds/openhat.wav"></audio>
+    <audio data-key="71" src="sounds/boom.wav"></audio>
+    <audio data-key="72" src="sounds/ride.wav"></audio>
+    <audio data-key="74" src="sounds/tink.wav"></audio>
+    <audio data-key="75" src="sounds/tom.wav"></audio>
+    <audio data-key="76" src="sounds/tink.wav"></audio>
+    
+  </body>
+</html>
