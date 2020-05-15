@@ -1,0 +1,38 @@
+body {
+  background-image: url("bg.jpg");
+}
+.clock {
+  width: 15rem;
+  height: 15rem;
+  border: 7px solid black;
+  border-radius: 50%;
+  margin: 160 auto;
+}
+
+.hand {
+  background-color: black;
+  position: absolute;
+  width: 50%;
+  height: 6px;
+  top: 50%;
+  transform-origin: 100%;
+}
+.hour-hand {
+  width: 37%;
+  left: 13%;
+}
+.minute-hand {
+  width: 45%;
+  left: 5%;
+}
+.second-hand {
+  width: 50%;
+}
+
+.clock-face {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: translateY(-3px);
+  transform: rotateZ(90deg);
+}
