@@ -7,6 +7,7 @@ ctx.lineJoin = "round";
 ctx.lineCap = "round";
 ctx.lineWidth = "50";
 
+
 let isDrawing = false;
 let hue = 0;
 let lastX = 0;
