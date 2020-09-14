@@ -4,9 +4,9 @@ window.addEventListener("keydown", function (e) {
   if (!audio) {
     return;
   }
-  audio.play();
-  const val=`${e.keyCode}`;
   
+  audio.play();
+  const val=`${e.keyCode}`;  
    document.getElementById(val).style.border="4px solid yellow";
   
 
